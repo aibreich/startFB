@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start FB</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- THIS IS THE HW PART -->
+    <nav>
+      <h1 style="margin-top: 22px">Album Showcase!</h1>
+      <div style="display: flex">
+        <div style="display: flex">
+          <label
+            for="cars"
+            style="
+              width: 120px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+            >Filter By Genre:</label
+          >
+          <select
+            name="genre"
+            id="genres"
+            style="width: 120px; height: 20px; margin-top: 20px"
+          >
+            <option value="Yacht Rock">Yacht Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="R&B/Soul">R&B/Soul</option>
+          </select>
+          <!-- END OF THE SEARCH/SELECTOR TAG -->
+        </div>
+        <div style="padding-left: 4px">
+          <!-- GET ALL ALBUMS AFTER FILTERING -->
+          <button
+            id="getGenreButton"
+            style="width: 120px; height: 20px; margin-top: 20px"
+          >
+            Filter
+          </button>
+          <button id="getAllAlbums" style="width: 120px; height: 20px">
+            Show All Albums
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF THIS TAG FOR HW -->
+    <div class="wrapper">
+      <!-- <h1>Hello Firebase!</h1> -->
+
+      <!-- IN CLASS -->
+      <button style="display: none" id="login">Log In</button>
+      <button style="display: none" id="logout">Log Out</button>
+      <div style="display: none">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" />
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" />
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" />
+        <input type="submit" value="Add User" id="addUser" />
+      </div>
+      <div style="display: none">
+        <label for="query-input">Search By First Name:</label>
+        <input type="text" id="query-input" />
+        <button id="getQueryButton">Search</button>
+        <div id="userWithFirstname"></div>
+        <!-- IN CLASS -->
+      </div>
+
+      <div style="padding-bottom: 15px">
+        <button id="getAllData" style="display: none">Get All Data</button>
+      </div>
+      <div id="allData"></div>
+      <div id="userData"></div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
